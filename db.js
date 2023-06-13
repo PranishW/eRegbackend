@@ -6,7 +6,6 @@ const MongoURI = process.env.MONGO_URI
 const connectToMongo = () =>{
     mongoose.connect(MongoURI,()=>{
         console.log("Connected to Mongoose")
-        console.log(process.env)
     });
 }
 module.exports= connectToMongo;
